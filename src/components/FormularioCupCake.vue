@@ -1,15 +1,13 @@
 <template>
   <div class="card" id="carta_tortas">
-    <img src="logos/imagenes formulario/carta tortas.png" class="card-img-top" alt="select tortas">
+    <img src="logos/imagenes formulario/carta cupcakes.png" class="card-img-top" alt="select cupcake">
     <div class="card-body">
       <h4 class="card-title text-center">Personaliza tu {{ producto.nombre_producto }}</h4>
-      <p class="card-text text-center">Selecciona el sabor de torta que más te guste, después escoge un
-        relleno y finalmente, un color para la decoración. </p>
+      <p class="card-text text-center">Selecciona el sabor de la base del cupcake, escoge un relleno y
+        finalmente, selecciona un sabor para la decoración. </p>
       <h5>Selecciona el sabor base</h5>
       <select class="custom-select mb-2" v-model="producto.sabor_base">
-        <option v-bind:value="base" v-for="(base, index) in sabor_base" :key="base + index">{{
-            base
-          }}
+        <option v-bind:value="base" v-for="(base, index) in sabor_base" :key="base + index">{{ base }}
         </option>
       </select>
       <h5>Selecciona el sabor del relleno</h5>
@@ -47,21 +45,21 @@ export default {
   data() {
     return {
       producto: {
-        nombre_producto: 'Torta',
+        nombre_producto: 'Cupcake',
         sabor_base: '',
         sabor_relleno: '',
         color_decoracion: '',
         fecha_creacion: fecha.getFullYear() + '-' + (fecha.getMonth() + 1) + '-' + fecha.getDate(),
-        costo: 50000
+        costo: 30000
       },
       sabor_base: [
-        'Chocolate', 'Vainilla', 'Yogurt griego', 'Marmoleada'
+        'Chocolate', 'Vainilla', 'Marmoleado'
       ],
       sabor_relleno: [
-        'Ganache de chocolate', 'Frutos rojos', 'Duraznos y chantilly', 'Maracuyá'
+        'Ganache de chocolate', 'Frutos rojos', 'Maracuyá'
       ],
       color_decoracion: [
-        'Azul', 'Rosa', 'Blaco crema', 'Morado'
+        'Azul', 'Rosa', 'Blanco crema', 'Morado'
 
       ]
     }

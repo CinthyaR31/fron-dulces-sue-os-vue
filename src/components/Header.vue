@@ -24,5 +24,15 @@
 </template>
 
 <style>
+body{
+  font-family: 'Courgette', cursive;
+}
 
+.bg-color-menu {
+  background-color: #f7ebed !important;
+}
+
+.center-items {
+  flex-direction: column;
+}
 </style>

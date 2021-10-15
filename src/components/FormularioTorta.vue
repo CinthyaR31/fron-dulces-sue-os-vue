@@ -7,9 +7,7 @@
         relleno y finalmente, un color para la decoración. </p>
       <h5>Selecciona el sabor base</h5>
       <select class="custom-select mb-2" v-model="producto.sabor_base">
-        <option v-bind:value="base" v-for="(base, index) in sabor_base" :key="base + index">{{
-            base
-          }}
+        <option v-bind:value="base" v-for="(base, index) in sabor_base" :key="base + index">{{ base }}
         </option>
       </select>
       <h5>Selecciona el sabor del relleno</h5>
