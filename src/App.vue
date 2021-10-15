@@ -5,6 +5,10 @@
     <Banner/>
     <Jumbotron/>
     <Productos/>
+    <hr>
+    <GridInstagram/>
+    <Formularios/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,6 +18,9 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import Jumbotron from './components/Jumbotron';
 import Productos from './components/Productos';
+import GridInstagram from './components/GridInstagram';
+import Formularios from './components/Formularios';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
@@ -21,7 +28,10 @@ export default {
     Header,
     Banner,
     Jumbotron,
-    Productos
+    Productos,
+    GridInstagram,
+    Formularios,
+    Footer
   }
 }
 </script>
